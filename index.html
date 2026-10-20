@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#245b43">
+    <meta name="description" content="Descubre productos naturales, suplementos, infusiones y alternativas para acompañar tu bienestar.">
+    <title>Cuida Tu Salud Naturalmente | Tienda Naturista</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="carrito.js" defer></script>
+</head>
+
+<body>
+    <div class="barra-superior">
+        <p>🌿 Bienestar natural, atención cercana y productos seleccionados</p>
+    </div>
+
+    <header id="inicio" class="encabezado">
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a class="marca" href="#inicio" aria-label="Ir al inicio">
+                <span class="marca-icono">✿</span>
+                <span>Cuida Tu Salud<small>NATURALMENTE</small></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Abrir menú" aria-expanded="false"
+                    aria-controls="menu-principal">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="menu" id="menu-principal">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#ventajas">Beneficios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galería">Galería</a></li>
+                <li><a href="#testimonios">Opiniones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="boton-carrito-nav" id="btn-ver-carrito" type="button">
+                🛒 Mi pedido <span id="contador-carrito">0</span>
+            </button>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="etiqueta">TU BIENESTAR ES LO NATURAL</span>
+                <h1>Pequeños hábitos,<br><em>grandes cambios.</em></h1>
+                <p>
+                    Encuentra productos naturales seleccionados para acompañar
+                    tu alimentación y tu estilo de vida. Te orientamos con
+                    atención cercana para que elijas con confianza.
+                </p>
+                <div class="hero-botones">
+                    <a class="boton boton-principal" href="#productos">Explorar productos <span>→</span></a>
+                    <a class="boton boton-secundario" href="#nosotros">Conócenos</a>
+                </div>
+                <div class="hero-detalles">
+                    <span>🌱 Productos seleccionados</span>
+                    <span>♡ Atención personalizada</span>
+                </div>
+            </div>
+
+            <div class="hero-imagen">
+                <img src="imagenes/banner.png" alt="Productos y ambiente de la tienda naturista">
+                <div class="sello-hero"><span>✿</span><strong>Vive mejor</strong><small>Naturalmente</small></div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="franja-valores" id="ventajas" aria-label="Nuestros valores">
+            <article><span>🌿</span><div><h3>Selección natural</h3><p>Productos escogidos con cuidado.</p></div></article>
+            <article><span>🤝</span><div><h3>Atención cercana</h3><p>Te ayudamos a resolver tus dudas.</p></div></article>
+            <article><span>💚</span><div><h3>Bienestar consciente</h3><p>Información para elegir mejor.</p></div></article>
+        </section>
+
+        <section class="seccion nosotros" id="nosotros">
+            <div class="encabezado-seccion">
+                <span class="etiqueta">QUIÉNES SOMOS</span>
+                <h2>La naturaleza inspira<br><em>nuestro propósito</em></h2>
+                <p>Creemos que cuidarse empieza con pequeñas decisiones informadas.</p>
+            </div>
+
+            <div class="nosotros-grid">
+                <div class="nosotros-tarjeta">
+                    <span class="numero-decorativo">01</span>
+                    <span class="icono-seccion">🌱</span>
+                    <h3>Nuestra misión</h3>
+                    <p>
+                        Ofrecer productos naturales y complementarios de calidad,
+                        con una atención respetuosa y cercana. Queremos orientar
+                        a nuestros clientes para que conozcan las características
+                        de cada producto y tomen decisiones responsables sobre
+                        su bienestar.
+                    </p>
+                </div>
+                <div class="nosotros-tarjeta tarjeta-destacada">
+                    <span class="numero-decorativo">02</span>
+                    <span class="icono-seccion">🌳</span>
+                    <h3>Nuestra visión</h3>
+                    <p>
+                        Para el año 2030, aspiramos a ser una tienda naturista
+                        reconocida por la confianza, la calidad de su servicio
+                        y la variedad de sus productos, mejorando continuamente
+                        la experiencia de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion productos-seccion" id="productos">
+            <div class="encabezado-seccion">
+                <span class="etiqueta">NUESTRA SELECCIÓN</span>
+                <h2>Productos para tu <em>bienestar</em></h2>
+                <p>Conoce nuestra selección y agrega al carrito lo que te interese.</p>
+            </div>
+
+            <div class="productos">
+                <article class="tarjeta-producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">BIENESTAR</span>
+                        <img src="imagenes/jarabe.png" alt="Presentación de jarabe" loading="lazy">
+                    </div>
+                    <div class="producto-info">
+                        <span class="producto-categoria">CUIDADO NATURAL</span>
+                        <h3>Jarabe natural</h3>
+                        <p>Producto de uso tradicional con ingredientes como propóleo, llantén o tomillo, según su etiqueta y presentación.</p>
+                        <div class="producto-pie">
+                            <div><small>Precio de ejemplo</small><strong class="precio">$25.000</strong></div>
+                            <button class="boton-agregar" type="button"
+                                data-nombre="Jarabe natural" data-precio="25000"
+                                aria-label="Agregar jarabe natural al carrito">+ Agregar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">ENERGÍA</span>
+                        <img src="imagenes/maca.png" alt="Presentación de maca" loading="lazy">
+                    </div>
+                    <div class="producto-info">
+                        <span class="producto-categoria">SUPLEMENTOS</span>
+                        <h3>Maca</h3>
+                        <p>Producto elaborado a base de maca. Revisa la presentación, los ingredientes y las recomendaciones del fabricante.</p>
+                        <div class="producto-pie">
+                            <div><small>Precio de ejemplo</small><strong class="precio">$45.000</strong></div>
+                            <button class="boton-agregar" type="button"
+                                data-nombre="Maca" data-precio="45000"
+                                aria-label="Agregar maca al carrito">+ Agregar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <div class="producto-imagen">
+                        <span class="etiqueta-producto">INFUSIONES</span>
+                        <img src="imagenes/te.png" alt="Presentación de té e infusiones" loading="lazy">
+                    </div>
+                    <div class="producto-info">
+                        <span class="producto-categoria">BEBIDAS NATURALES</span>
+                        <h3>Té e infusiones</h3>
+                        <p>Una mezcla para disfrutar caliente o fría. Consulta los ingredientes y las instrucciones de preparación del producto.</p>
+                        <div class="producto-pie">
+                            <div><small>Precio de ejemplo</small><strong class="precio">$18.000</strong></div>
+                            <button class="boton-agregar" type="button"
+                                data-nombre="Té e infusiones" data-precio="18000"
+                                aria-label="Agregar té e infusiones al carrito">+ Agregar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="nota-precios">* Los precios son ilustrativos. Reemplázalos por los precios reales y verifica la presentación de cada producto antes de venderlo.</p>
+        </section>
+
+        <section class="franja-frase">
+            <span>“</span>
+            <p>Cuidar de ti también es una forma de amar la vida.</p>
+            <small>CUÍDATE · RESPIRA · DISFRUTA</small>
+        </section>
+
+        <section class="seccion galeria-seccion" id="galería">
+            <div class="encabezado-seccion">
+                <span class="etiqueta">UN VISTAZO A NOSOTROS</span>
+                <h2>Un espacio pensado <em>para ti</em></h2>
+                <p>Explora nuestra galería y conoce más de nuestro entorno.</p>
+            </div>
+            <div class="galeria">
+                <button class="galeria-foto" type="button" aria-label="Ampliar imagen: entrada de la tienda">
+                    <img src="imagenes/galeria1.jfif" alt="Entrada de la tienda" loading="lazy">
+                    <span>Conócenos ↗</span>
+                </button>
+                <button class="galeria-foto" type="button" aria-label="Ampliar imagen: estantes">
+                    <img src="imagenes/galeria2.jfif" alt="Estantes de productos" loading="lazy">
+                    <span>Nuestra selección ↗</span>
+                </button>
+                <button class="galeria-foto" type="button" aria-label="Ampliar imagen: herbolario">
+                    <img src="imagenes/galeria3.jfif" alt="Herbolario" loading="lazy">
+                    <span>Inspiración natural ↗</span>
+                </button>
+                <button class="galeria-foto" type="button" aria-label="Ampliar imagen: productos frescos">
+                    <img src="imagenes/galeria4.jfif" alt="Productos naturales" loading="lazy">
+                    <span>Detalles naturales ↗</span>
+                </button>
+                <button class="galeria-foto" type="button" aria-label="Ampliar imagen: experiencia del cliente">
+                    <img src="imagenes/galeria5.jfif" alt="Experiencia de nuestros clientes" loading="lazy">
+                    <span>Tu experiencia ↗</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="seccion testimonios-seccion" id="testimonios">
+            <div class="encabezado-seccion">
+                <span class="etiqueta">EXPERIENCIAS</span>
+                <h2>Palabras que nos <em>motivan</em></h2>
+                <p>La confianza de nuestros clientes es importante para nosotros.</p>
+            </div>
+            <div class="testimonios">
+                <article class="testimonio">
+                    <div class="estrellas" aria-label="Cinco estrellas">★★★★★</div>
+                    <p>“Tiene excelente calidad y llegó en perfectas condiciones.”</p>
+                    <h4>Juan Andrés</h4>
+                    <span>Cliente</span>
+                </article>
+                <article class="testimonio">
+                    <div class="estrellas" aria-label="Cinco estrellas">★★★★★</div>
+                    <p>“Productos muy buenos y muy buen servicio al cliente.”</p>
+                    <h4>Mario</h4>
+                    <span>Cliente</span>
+                </article>
+                <article class="testimonio">
+                    <div class="estrellas" aria-label="Cinco estrellas">★★★★★</div>
+                    <p>“Una opción interesante para encontrar productos naturales.”</p>
+                    <h4>Carlos</h4>
+                    <span>Cliente</span>
+                </article>
+            </div>
+            <p class="nota-precios">Publica testimonios reales y autorizados de tus clientes. Los textos y nombres actuales son ejemplos editables.</p>
+        </section>
+
+        <section class="contacto-seccion" id="contacto">
+            <div class="contacto-intro">
+                <span class="etiqueta etiqueta-clara">ESTAMOS PARA AYUDARTE</span>
+                <h2>Hablemos de lo<br><em>que necesitas</em></h2>
+                <p>¿Tienes alguna pregunta sobre nuestros productos? Escríbenos y te atenderemos.</p>
+                <div class="contacto-dato">
+                    <span>☎</span><div><small>LLÁMANOS</small><p>311 618 6558</p></div>
+                </div>
+                <div class="contacto-dato">
+                    <span>✉</span><div><small>ESCRÍBENOS</small><p>tiendanaturista@gmail.com</p></div>
+                </div>
+                <a class="enlace-contacto" href="https://wa.me/573116186558" target="_blank" rel="noopener noreferrer">También puedes escribirnos por WhatsApp ↗</a>
+            </div>
+
+            <div class="contacto-formulario">
+                <h3>Envíanos un mensaje</h3>
+                <p>Completa los campos y continuaremos la conversación por WhatsApp.</p>
+                <form class="formulario" id="formulario-contacto">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" autocomplete="name" required maxlength="100">
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required maxlength="150">
+
+                    <label for="mensaje">¿En qué podemos ayudarte?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta..." required maxlength="1500"></textarea>
+
+                    <button type="submit" class="boton boton-principal boton-enviar">Enviar mensaje <span>→</span></button>
+                    <p id="estado-formulario" class="estado-formulario" role="status" aria-live="polite"></p>
+                    <small class="aviso-formulario">Al enviar, se abrirá WhatsApp con tu mensaje preparado. Tendrás que pulsar Enviar allí.</small>
+                </form>
+            </div>
+        </section>
+
+        <section class="aviso-salud">
+            <strong>Información importante</strong>
+            <p>El contenido de esta página es informativo y no sustituye la orientación de un profesional de la salud. Los productos naturales y suplementos no garantizan la prevención ni el tratamiento de enfermedades. Verifica las etiquetas, contraindicaciones y recomendaciones de uso.</p>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <a class="marca marca-pie" href="#inicio">
+            <span class="marca-icono">✿</span>
+            <span>Cuida Tu Salud<small>NATURALMENTE</small></span>
+        </a>
+        <p>Pequeñas decisiones para un bienestar consciente.</p>
+        <div class="pie-enlaces">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <small>© <span id="anio-actual">2026</span> Cuida Tu Salud Naturalmente. Todos los derechos reservados.</small>
+    </footer>
+     
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/573116186558" class="whatsapp" target="_blank"
+       rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <img src="imagenes/social.png" alt="">
+    </a>
+
+    <!-- Fondo y ventana del carrito -->
+    <div class="carrito-fondo" id="carrito-fondo"></div>
+
+    <aside class="carrito-lateral" id="carrito-ventana"
+           role="dialog" aria-modal="true" aria-labelledby="titulo-carrito"
+           aria-hidden="true">
+        <div class="carrito-contenido">
+            <div class="carrito-cabecera">
+                <div><span class="etiqueta">TU SELECCIÓN</span><h2 id="titulo-carrito">Mi pedido</h2></div>
+                <button id="btn-cerrar-carrito" class="btn-cerrar" type="button" aria-label="Cerrar carrito">×</button>
+            </div>
+            <div class="carrito-items" id="lista-carrito">
+                <p class="carrito-vacio">Tu carrito está vacío. Agrega un producto para comenzar.</p>
+            </div>
+            <div class="carrito-pie">
+                <div class="carrito-total"><span>Total estimado</span><strong id="precio-total">$0</strong></div>
+                <p class="carrito-nota">El precio final y la disponibilidad se confirman con la tienda.</p>
+                <button id="btn-enviar-whatsapp" class="btn-confirmar" type="button">Confirmar pedido por WhatsApp ↗</button>
+                <button id="btn-vaciar-carrito" class="btn-vaciar" type="button">Vaciar carrito</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Visor de imágenes de la galería -->
+    <div class="visor-galeria" id="visor-galeria" role="dialog"
+         aria-modal="true" aria-label="Visor de galería" aria-hidden="true">
+        <button class="visor-cerrar" id="visor-cerrar" type="button" aria-label="Cerrar galería">×</button>
+        <button class="visor-anterior" id="visor-anterior" type="button" aria-label="Imagen anterior">‹</button>
+        <figure>
+            <img src="imagenes/galeria1.jfif" id="visor-imagen" alt="">
+            <figcaption id="visor-contador">1 / 5</figcaption>
+        </figure>
+        <button class="visor-siguiente" id="visor-siguiente" type="button" aria-label="Imagen siguiente">›</button>
+    </div>
+</body>
+</html>
